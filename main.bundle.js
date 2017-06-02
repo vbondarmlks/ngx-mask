@@ -21,11 +21,11 @@ module.exports = module.exports.toString();
 /***/ 153:
 /***/ (function(module, exports) {
 
-module.exports = "<style>\nmd-sidenav {\n  display: flex;\n  overflow: visible;\n}\n\n</style>\n\n<md-sidenav-container>\n\n  <md-sidenav mode=\"side\" opened=\"false\">\n    Side menu\n  </md-sidenav>\n\n  <div class=\"container\">\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <header>\n          <h1>\n            <span class=\"jq-label\">Angular2</span>\n            <span class=\"plugin-name\">Mask Plugin</span>\n          </h1>\n          <span class=\"subtitle\">An Angular2 Plugin to make masks on form fields and html elements.</span>\n        </header>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-grid-list cols=\"1\" rowHeight=\"140px\">\n\n          <md-grid-tile>\n            <md-toolbar color=\"primary\">\n              <span>Examples</span>\n            </md-toolbar>\n          </md-grid-tile>\n\n        </md-grid-list>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Mask common case</md-card-title>\n            <md-card-subtitle>An case of date mask</md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Date\" mask=\"00/00/0000\" [formControl]=\"form\" [(ngModel)]=\"dateModel\">\n                  <md-hint><b>Mask:</b> 00/00/0000</md-hint>\n                </md-input-container>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>FormControl:</b> {{ form.value ? form.value : 'Empty' }}</p>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>NgModel:</b> {{ dateModel ? dateModel : 'Empty' }}</p>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Other common cases</md-card-title>\n            <md-card-subtitle>Other common cases that you could apply in your projects. Try your self. :D</md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Date and Hour\" mask=\"00/00/00 00:00:00\">\n                  <md-hint><b>Mask:</b> 00/00/00 00:00:00</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Hour\" mask=\"00:00:00\">\n                  <md-hint><b>Mask:</b> 00:00:00</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Mixed Type\" mask=\"AAA 000-S0S\">\n                  <md-hint><b>Mask:</b> AAA 000-S0S</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Phone\" mask=\"(000) 000-0000\">\n                  <md-hint><b>Mask:</b> (000) 000-0000</md-hint>\n                </md-input-container>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Masks and special characters</md-card-title>\n            <md-card-subtitle>\n              You could define if you want special characters propagate to the model or not with the\n              attribute <b>specialCharacters</b>.\n            </md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"CPF\" [specialCharacters]=\"false\" mask=\"000.000.000-00\" [formControl]=\"cpfFormControl\" [(ngModel)]=\"cpfModel\">\n                  <md-hint><b>Mask:</b> 000.000.000-00</md-hint>\n                </md-input-container>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>FormControl:</b> {{ cpfFormControl.value ? cpfFormControl.value : 'Empty' }}</p>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>NgModel:</b> {{ cpfModel ? cpfModel : 'Empty' }}</p>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-grid-list cols=\"1\" rowHeight=\"140px\">\n\n          <md-grid-tile>\n            <md-toolbar color=\"primary\">\n              <span>Documentation - comming soon...</span>\n            </md-toolbar>\n          </md-grid-tile>\n\n        </md-grid-list>\n\n      </div>\n    </div>\n\n  </div>\n\n</md-sidenav-container>\n"
+module.exports = "<style>\nmd-sidenav {\n  display: flex;\n  overflow: visible;\n}\n\n</style>\n\n<md-sidenav-container>\n\n  <md-sidenav mode=\"side\" opened=\"false\">\n    Side menu\n  </md-sidenav>\n\n  <div class=\"container\">\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <header>\n          <h1>\n            <span class=\"jq-label\">Angular2</span>\n            <span class=\"plugin-name\">Mask Plugin</span>\n          </h1>\n          <span class=\"subtitle\">An Angular2 Plugin to make masks on form fields and html elements.</span>\n        </header>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-grid-list cols=\"1\" rowHeight=\"140px\">\n\n          <md-grid-tile>\n            <md-toolbar color=\"primary\">\n              <span>Examples</span>\n            </md-toolbar>\n          </md-grid-tile>\n\n        </md-grid-list>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Mask common case</md-card-title>\n            <md-card-subtitle>An case of date mask</md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Date\" mask=\"00/00/0000\" [formControl]=\"form\" [(ngModel)]=\"dateModel\">\n                  <md-hint><b>Mask:</b> 00/00/0000</md-hint>\n                </md-input-container>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>FormControl:</b> {{ form.value ? form.value : 'Empty' }}</p>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>NgModel:</b> {{ dateModel ? dateModel : 'Empty' }}</p>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Other common cases</md-card-title>\n            <md-card-subtitle>Other common cases that you could apply in your projects. Try your self. :D</md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Date and Hour\" mask=\"00/00/00 00:00:00\">\n                  <md-hint><b>Mask:</b> 00/00/00 00:00:00</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Hour\" mask=\"00:00:00\">\n                  <md-hint><b>Mask:</b> 00:00:00</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Mixed Type\" mask=\"AAA 000-S0S\">\n                  <md-hint><b>Mask:</b> AAA 000-S0S</md-hint>\n                </md-input-container>\n              </div>\n\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Phone\" mask=\"(000) 000-0000\">\n                  <md-hint><b>Mask:</b> (000) 000-0000</md-hint>\n                </md-input-container>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Masks and special characters</md-card-title>\n            <md-card-subtitle>\n              You could define if you want special characters propagate to the model or not with the\n              attribute <b>specialCharacters</b>.\n            </md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"CPF\" [specialCharacters]=\"false\" mask=\"000.000.000-00\" [formControl]=\"cpfFormControl\" [(ngModel)]=\"cpfModel\">\n                  <md-hint><b>Mask:</b> 000.000.000-00</md-hint>\n                </md-input-container>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>FormControl:</b> {{ cpfFormControl.value ? cpfFormControl.value : 'Empty' }}</p>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>NgModel:</b> {{ cpfModel ? cpfModel : 'Empty' }}</p>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-card>\n          <md-card-header>\n            <md-card-title>Clear if not match</md-card-title>\n            <md-card-subtitle>\n              You could clear the input if the value not match the mask, you'll just need to set <b>clearIfNotMatch</b> attribute.\n            </md-card-subtitle>\n          </md-card-header>\n          <md-card-content>\n            <div class=\"row\">\n              <div class=\"col-md-3\">\n                <md-input-container>\n                  <input mdInput placeholder=\"Clear if not match\" [clearIfNotMatch]=\"true\" mask=\"000.000\"\n                    [formControl]=\"clearIfNotMatchForm\" [(ngModel)]=\"clearIfNotMatchModel\">\n                  <md-hint><b>Mask:</b> 000.000</md-hint>\n                </md-input-container>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>FormControl:</b> {{ clearIfNotMatchForm.value ? clearIfNotMatchForm.value : 'Empty' }}</p>\n              </div>\n              <div class=\"col-md-3\">\n                <p><b>NgModel:</b> {{ clearIfNotMatchModel ? clearIfNotMatchModel : 'Empty' }}</p>\n              </div>\n            </div>\n          </md-card-content>\n        </md-card>\n\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-12\">\n\n        <md-grid-list cols=\"1\" rowHeight=\"140px\">\n\n          <md-grid-tile>\n            <md-toolbar color=\"primary\">\n              <span>Documentation - comming soon...</span>\n            </md-toolbar>\n          </md-grid-tile>\n\n        </md-grid-list>\n\n      </div>\n    </div>\n\n  </div>\n\n</md-sidenav-container>\n"
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(83);
@@ -90,6 +90,7 @@ var AppComponent = (function () {
     function AppComponent() {
         this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormControl */]('30081991');
         this.cpfFormControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormControl */]('04787954778');
+        this.clearIfNotMatchForm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormControl */]();
     }
     return AppComponent;
 }());
@@ -113,7 +114,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_hammerjs__ = __webpack_require__(152);
@@ -177,7 +178,8 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(23);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaskDirective; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -188,6 +190,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
 
 
 var resolvedPromise = Promise.resolve(null);
@@ -195,11 +201,11 @@ var resolvedPromise = Promise.resolve(null);
 /** TODO(custom patterns) */
 /** TODO(cursor position) */
 /** TODO(create special characters object to specialCharacters directive) */
-/** TODO(clean value when mask is not right) */
 var MaskDirective = MaskDirective_1 = (function () {
-    function MaskDirective(_elementRef, _renderer) {
+    function MaskDirective(_elementRef, _renderer, document) {
         this._elementRef = _elementRef;
         this._renderer = _renderer;
+        this.document = document;
         this._maskSpecialCharacters = ['/', '(', ')', '.', ':', '-', ' ', '+'];
         this._maskAwaliablePatterns = {
             '0': /\d/,
@@ -210,6 +216,7 @@ var MaskDirective = MaskDirective_1 = (function () {
         // tslint:disable-next-line
         this._onChange = function (_) { };
         this.modelWithSpecialCharacters = true;
+        this._clearIfNotMatch = false;
     }
     MaskDirective.prototype.ngOnInit = function () {
         var _this = this;
@@ -235,7 +242,21 @@ var MaskDirective = MaskDirective_1 = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(MaskDirective.prototype, "clearIfNotMatch", {
+        get: function () {
+            return this._clearIfNotMatch;
+        },
+        set: function (value) {
+            this._clearIfNotMatch = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     MaskDirective.prototype.onInput = function () {
+        this._applyValueChanges();
+    };
+    MaskDirective.prototype.onBlur = function () {
+        this._clearIfNotMatchFn();
         this._applyValueChanges();
     };
     /** It writes the value in the input */
@@ -297,12 +318,18 @@ var MaskDirective = MaskDirective_1 = (function () {
         if (!value) {
             return value;
         }
-        return value.replace(/(\/|\.|-|\(|\)| : | |\+)/gi, '');
+        return value.replace(/(\/|\.|-|\(|\)|:| |\+)/gi, '');
     };
     MaskDirective.prototype._checkSymbolMask = function (inputSymbol, maskSymbol) {
         return inputSymbol === maskSymbol
             || this._maskAwaliablePatterns[maskSymbol]
                 && this._maskAwaliablePatterns[maskSymbol].test(inputSymbol);
+    };
+    MaskDirective.prototype._clearIfNotMatchFn = function () {
+        if (this.clearIfNotMatch === true && this._maskExpression.length
+            !== this._elementRef.nativeElement.value.length) {
+            this._elementRef.nativeElement.value = '';
+        }
     };
     /** It applies the mask in the input and updates the control's value. */
     MaskDirective.prototype._applyValueChanges = function () {
@@ -311,9 +338,13 @@ var MaskDirective = MaskDirective_1 = (function () {
         this._elementRef.nativeElement.value = maskedInput;
         if (this.modelWithSpecialCharacters === true) {
             this._onChange(maskedInput);
-            return;
         }
-        this._onChange(this._removeMask(val));
+        else {
+            this._onChange(this._removeMask(maskedInput));
+        }
+        if (this._elementRef.nativeElement !== this.document.activeElement) {
+            this._clearIfNotMatchFn();
+        }
     };
     return MaskDirective;
 }());
@@ -328,23 +359,35 @@ __decorate([
     __metadata("design:paramtypes", [Boolean])
 ], MaskDirective.prototype, "modelWithSpecialCharacters", null);
 __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Input */])('clearIfNotMatch'),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [Boolean])
+], MaskDirective.prototype, "clearIfNotMatch", null);
+__decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* HostListener */])('input'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], MaskDirective.prototype, "onInput", null);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* HostListener */])('blur'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], MaskDirective.prototype, "onBlur", null);
 MaskDirective = MaskDirective_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Directive */])({
         selector: '[mask]',
         providers: [
             {
-                provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NG_VALUE_ACCESSOR */],
+                provide: __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* NG_VALUE_ACCESSOR */],
                 useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* forwardRef */])(function () { return MaskDirective_1; }),
                 multi: true
             }
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Renderer2 */]) === "function" && _b || Object])
+    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DOCUMENT */])),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Renderer2 */]) === "function" && _b || Object, Object])
 ], MaskDirective);
 
 var MaskDirective_1, _a, _b;
@@ -403,5 +446,5 @@ var environment = {
 
 /***/ })
 
-},[206]);
+},[207]);
 //# sourceMappingURL=main.bundle.js.map
