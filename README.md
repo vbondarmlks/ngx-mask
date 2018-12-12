@@ -126,6 +126,14 @@ Masked value: (Hel-loW)
 <input type='text' prefix="+7 " mask="(000) 000 00 00" >
 ```
 
+### sufix (string)
+   You can add sufix to you masked value
+##### Usage
+
+```html
+<input type='text' sufix=" $" mask="0000" >
+```
+
 ### dropSpecialCharacters (boolean)
    You can choose if mask will drop special character in the model, or not, default value true
 ##### Usage
@@ -141,8 +149,64 @@ Input value: 789-874.98
 Model value: 789-874.98
 ```
 
+### showMaskTyped (boolean)
+  You can choose if mask is shown while typing, or not, default value false
+##### Usage
+
+```html
+ <input mask="(000) 000-0000" prefix="+7" [showMaskTyped] = "true">
+```
+
 ### clearIfNotMatch (boolean)
    You can choose clear the input if the input value **not match** the mask, default value false
+
+### Pipe with mask expression and custom Pattern ([string, pattern])
+  You can pass array of expression and custom Pattern to pipe
+  
+##### Usage
+
+```html
+ <span>{{phone | mask: customMaska}}</span>
+```
+and in your component
+```
+customMaska: [string, pattern];
+
+pattern =  {
+    'P': {
+        pattern: new RegExp('\\d'),
+    }};
+  
+this.customMaska = ['PPP-PPP', this.pattern];
+```
+
+### Repeat mask
+  You can pass into mask pattern with brackets
+  
+##### Usage
+
+```html
+ <input type='text' mask="A{4}">
+```
+
+### Thousand separator
+  You can devide your input by thousands
+
+##### Usage
+
+```html
+ <input type='text' mask="separator">
+```
+
+### Time validation
+  You can validate your input as 24 hour format
+
+##### Usage
+
+```html
+ <input type='text' mask="Hh:m0:s0">
+```
+
 
 
 ## Examples

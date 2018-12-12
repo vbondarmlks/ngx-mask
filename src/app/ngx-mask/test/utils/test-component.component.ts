@@ -4,14 +4,16 @@ import { IConfig } from 'public_api';
 
 @Component({
   selector: 'test-mask',
-  template: `<input [mask]="mask"
+  template: `<input id='maska' [mask]="mask"
       [clearIfNotMatch]="clearIfNotMatch"
       [dropSpecialCharacters]="dropSpecialCharacters"
       [specialCharacters]="specialCharacters"
       [patterns]="patterns"
+      [sufix]="sufix"
       [prefix]="prefix"
       [formControl]="form"
-      [(ngModel)]="ngModelValue">`
+      [showMaskTyped] = "showMaskTyped"
+      [(ngModel)]="ngModelValue">`,
 })
 export class TestMaskComponent {
   public mask: string | null;
@@ -21,5 +23,7 @@ export class TestMaskComponent {
   public clearIfNotMatch: IConfig['clearIfNotMatch'] = false;
   public patterns: IConfig['patterns'];
   public prefix: IConfig['prefix'] = '';
+  public sufix: IConfig['sufix'] = '';
   public specialCharacters: IConfig['specialCharacters'];
+  public showMaskTyped: IConfig['showMaskTyped'] = false;
 }
