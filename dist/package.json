@@ -16,13 +16,6 @@
     "ng2mask",
     "jsdaddy"
   ],
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "test": "ng test",
-    "lint": "tslint './src/app/**/*.ts'",
-    "build:library": "ng-packagr -p package.json"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/NepipenkoIgor/ngx-mask.git"
@@ -60,5 +53,17 @@
     "typescript": "3.1.6",
     "webdriver-manager": "12.1.0"
   },
-  "ngPackage": true
+  "main": "bundles/ngx-mask.umd.js",
+  "module": "fesm5/ngx-mask.js",
+  "es2015": "fesm2015/ngx-mask.js",
+  "esm5": "esm5/ngx-mask.js",
+  "esm2015": "esm2015/ngx-mask.js",
+  "fesm5": "fesm5/ngx-mask.js",
+  "fesm2015": "fesm2015/ngx-mask.js",
+  "typings": "ngx-mask.d.ts",
+  "metadata": "ngx-mask.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }
