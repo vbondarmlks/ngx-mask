@@ -346,14 +346,8 @@ export class MaskApplierService {
     const x: string[] = str.split(".");
     const decimals: string =
       x.length > 1
-        ? `.${
-            x[1].length > 0
-              ? x[1].length > 2
-                ? x[1].substring(0, 2)
-                : x[1]
-              : x[1]
-          }`
-        : "00";
+        ? `.${x[1].length < 3 ? x[1] : x[1].substring(0, 2)}`
+        : `.00`;
     let res: string = x[0];
     const rgx: RegExp = /(\d+)(\d{3})/;
     while (rgx.test(res)) {

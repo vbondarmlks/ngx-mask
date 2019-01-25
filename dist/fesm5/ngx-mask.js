@@ -1,6 +1,6 @@
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DOCUMENT } from '@angular/common';
-import { __read, __awaiter, __generator, __assign, __extends } from 'tslib';
+import { __read, __awaiter, __generator, __extends, __assign } from 'tslib';
 import { InjectionToken, Inject, Injectable, ElementRef, Renderer2, Directive, forwardRef, HostListener, Input, Pipe, NgModule } from '@angular/core';
 
 /**
@@ -112,12 +112,8 @@ var MaskApplierService = /** @class */ (function () {
             var x = str.split(".");
             /** @type {?} */
             var decimals = x.length > 1
-                ? "." + (x[1].length > 0
-                    ? x[1].length > 2
-                        ? x[1].substring(0, 2)
-                        : x[1]
-                    : x[1])
-                : "00";
+                ? "." + (x[1].length < 3 ? x[1] : x[1].substring(0, 2))
+                : ".00";
             /** @type {?} */
             var res = x[0];
             /** @type {?} */

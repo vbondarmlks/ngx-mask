@@ -115,12 +115,8 @@ class MaskApplierService {
             const x = str.split(".");
             /** @type {?} */
             const decimals = x.length > 1
-                ? `.${x[1].length > 0
-                    ? x[1].length > 2
-                        ? x[1].substring(0, 2)
-                        : x[1]
-                    : x[1]}`
-                : "00";
+                ? `.${x[1].length < 3 ? x[1] : x[1].substring(0, 2)}`
+                : `.00`;
             /** @type {?} */
             let res = x[0];
             /** @type {?} */
