@@ -264,9 +264,7 @@
                 /** @type {?} */
                 var x = str.split(".");
                 /** @type {?} */
-                var decimals = x.length > 1
-                    ? "." + (x[1].length < 3 ? x[1] : x[1].substring(0, 2))
-                    : ".00";
+                var decimals = x.length > 1 ? "." + (x[1].length < 3 ? x[1] : x[1].substring(0, 2)) : "";
                 /** @type {?} */
                 var res = x[0];
                 /** @type {?} */
