@@ -1,6 +1,6 @@
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DOCUMENT } from '@angular/common';
-import { __read, __awaiter, __generator, __assign, __extends } from 'tslib';
+import { __read, __extends, __awaiter, __generator, __assign } from 'tslib';
 import { InjectionToken, Inject, Injectable, ElementRef, Renderer2, Directive, forwardRef, HostListener, Input, Pipe, NgModule } from '@angular/core';
 
 /**
@@ -8,48 +8,62 @@ import { InjectionToken, Inject, Injectable, ElementRef, Renderer2, Directive, f
  * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-var config = new InjectionToken('config');
+var config = new InjectionToken("config");
 /** @type {?} */
-var NEW_CONFIG = new InjectionToken('NEW_CONFIG');
+var NEW_CONFIG = new InjectionToken("NEW_CONFIG");
 /** @type {?} */
-var INITIAL_CONFIG = new InjectionToken('INITIAL_CONFIG');
+var INITIAL_CONFIG = new InjectionToken("INITIAL_CONFIG");
 /** @type {?} */
 var initialConfig = {
-    sufix: '',
-    prefix: '',
+    sufix: "",
+    prefix: "",
     clearIfNotMatch: false,
     showTemplate: false,
     showMaskTyped: false,
     dropSpecialCharacters: true,
-    specialCharacters: ['-', '/', '(', ')', '.', ':', ' ', '+', ',', '@', '[', ']', '\"', '\''],
+    specialCharacters: [
+        "-",
+        "/",
+        "(",
+        ")",
+        ":",
+        " ",
+        "+",
+        ",",
+        "@",
+        "[",
+        "]",
+        '"',
+        "'"
+    ],
     patterns: {
-        '0': {
-            pattern: new RegExp('\\d'),
+        "0": {
+            pattern: new RegExp("\\d")
         },
-        '9': {
-            pattern: new RegExp('\\d'),
+        "9": {
+            pattern: new RegExp("\\d"),
             optional: true
         },
-        'A': {
-            pattern: new RegExp('\[a-zA-Z0-9\]')
+        A: {
+            pattern: new RegExp("[a-zA-Z0-9]")
         },
-        'S': {
-            pattern: new RegExp('\[a-zA-Z\]')
+        S: {
+            pattern: new RegExp("[a-zA-Z]")
         },
-        'd': {
-            pattern: new RegExp('\\d'),
+        d: {
+            pattern: new RegExp("\\d")
         },
-        'm': {
-            pattern: new RegExp('\\d'),
+        m: {
+            pattern: new RegExp("\\d")
         },
-        'H': {
-            pattern: new RegExp('\\d'),
+        H: {
+            pattern: new RegExp("\\d")
         },
-        'h': {
-            pattern: new RegExp('\\d'),
+        h: {
+            pattern: new RegExp("\\d")
         },
-        's': {
-            pattern: new RegExp('\\d'),
+        s: {
+            pattern: new RegExp("\\d")
         }
     }
 };

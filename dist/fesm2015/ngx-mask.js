@@ -8,48 +8,62 @@ import { InjectionToken, Inject, Injectable, ElementRef, Renderer2, Directive, f
  * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const config = new InjectionToken('config');
+const config = new InjectionToken("config");
 /** @type {?} */
-const NEW_CONFIG = new InjectionToken('NEW_CONFIG');
+const NEW_CONFIG = new InjectionToken("NEW_CONFIG");
 /** @type {?} */
-const INITIAL_CONFIG = new InjectionToken('INITIAL_CONFIG');
+const INITIAL_CONFIG = new InjectionToken("INITIAL_CONFIG");
 /** @type {?} */
 const initialConfig = {
-    sufix: '',
-    prefix: '',
+    sufix: "",
+    prefix: "",
     clearIfNotMatch: false,
     showTemplate: false,
     showMaskTyped: false,
     dropSpecialCharacters: true,
-    specialCharacters: ['-', '/', '(', ')', '.', ':', ' ', '+', ',', '@', '[', ']', '\"', '\''],
+    specialCharacters: [
+        "-",
+        "/",
+        "(",
+        ")",
+        ":",
+        " ",
+        "+",
+        ",",
+        "@",
+        "[",
+        "]",
+        '"',
+        "'"
+    ],
     patterns: {
-        '0': {
-            pattern: new RegExp('\\d'),
+        "0": {
+            pattern: new RegExp("\\d")
         },
-        '9': {
-            pattern: new RegExp('\\d'),
+        "9": {
+            pattern: new RegExp("\\d"),
             optional: true
         },
-        'A': {
-            pattern: new RegExp('\[a-zA-Z0-9\]')
+        A: {
+            pattern: new RegExp("[a-zA-Z0-9]")
         },
-        'S': {
-            pattern: new RegExp('\[a-zA-Z\]')
+        S: {
+            pattern: new RegExp("[a-zA-Z]")
         },
-        'd': {
-            pattern: new RegExp('\\d'),
+        d: {
+            pattern: new RegExp("\\d")
         },
-        'm': {
-            pattern: new RegExp('\\d'),
+        m: {
+            pattern: new RegExp("\\d")
         },
-        'H': {
-            pattern: new RegExp('\\d'),
+        H: {
+            pattern: new RegExp("\\d")
         },
-        'h': {
-            pattern: new RegExp('\\d'),
+        h: {
+            pattern: new RegExp("\\d")
         },
-        's': {
-            pattern: new RegExp('\\d'),
+        s: {
+            pattern: new RegExp("\\d")
         }
     }
 };
