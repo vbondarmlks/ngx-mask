@@ -60,5 +60,17 @@
     "typescript": "3.1.6",
     "webdriver-manager": "12.1.0"
   },
-  "ngPackage": true
+  "ngPackage": true,
+    "main": "dist/bundles/ngx-mask.umd.js",
+    "module": "dist/fesm5/ngx-mask.js",
+    "es2015": "dist/fesm2015/ngx-mask.js",
+    "esm5": "dist/esm5/ngx-mask.js",
+    "esm2015": "dist/esm2015/ngx-mask.js",
+    "fesm5": "dist/fesm5/ngx-mask.js",
+    "fesm2015": "dist/fesm2015/ngx-mask.js",
+    "typings": "dist/ngx-mask.d.ts",
+    "metadata": "dist/ngx-mask.metadata.json",
+    "files": [
+        "dist"
+    ]
 }
